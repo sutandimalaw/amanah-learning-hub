@@ -13,8 +13,8 @@ const services = [
       'Sales Process & Pipeline Management',
       'Negotiation & Closing Techniques',
       'Handling Objections',
-      'Sales Motivation & Mindset'
-    ]
+      'Sales Motivation & Mindset',
+    ],
   },
   {
     icon: Users,
@@ -26,8 +26,8 @@ const services = [
       'Transformational Leadership',
       'Managing Change & Conflict',
       'Leader as a Coach',
-      'Building Impactful Leadership'
-    ]
+      'Building Impactful Leadership',
+    ],
   },
   {
     icon: Heart,
@@ -39,27 +39,23 @@ const services = [
       'Frontliner Professionalism',
       'Customer Delight Strategy',
       'Persuasive Communication',
-      'Service Recovery Excellence'
-    ]
-  }
+      'Service Recovery Excellence',
+    ],
+  },
 ];
 
 export function ServicesSection() {
   return (
     <section id="layanan" className="section-padding">
       <div className="container-custom">
-        {/* Header */}
         <div className="text-center mb-16">
           <Badge className="mb-4 bg-primary/10 text-primary">Layanan Kami</Badge>
-          <h2 className="text-4xl lg:text-5xl font-bold text-foreground mb-6">
-            Program Pelatihan Profesional
-          </h2>
+          <h2 className="text-4xl lg:text-5xl font-bold text-foreground mb-6">Program Pelatihan Profesional</h2>
           <p className="text-lg text-muted-foreground max-w-3xl mx-auto">
             Solusi pelatihan yang terpersonalisasi untuk mengembangkan kompetensi dan performa tim Anda
           </p>
         </div>
 
-        {/* Services Grid */}
         <div className="grid lg:grid-cols-3 gap-8 mb-16">
           {services.map((service, index) => {
             const IconComponent = service.icon;
@@ -72,17 +68,13 @@ export function ServicesSection() {
                   <CardTitle className="text-2xl text-foreground">{service.title}</CardTitle>
                 </CardHeader>
                 <CardContent className="space-y-4">
-                  <p className="text-muted-foreground leading-relaxed">
-                    {service.description}
-                  </p>
+                  <p className="text-muted-foreground leading-relaxed">{service.description}</p>
                   <div className="space-y-2">
-                    <h4 className="font-semibold text-foreground text-sm uppercase tracking-wide">
-                      Topik Pelatihan:
-                    </h4>
+                    <h4 className="font-semibold text-foreground text-sm uppercase tracking-wide">Topik Pelatihan:</h4>
                     <ul className="space-y-2">
                       {service.topics.map((topic, topicIndex) => (
                         <li key={topicIndex} className="flex items-start space-x-2">
-                          <div className="w-2 h-2 bg-primary rounded-full flex-shrink-0 mt-2"></div>
+                          <div className="w-2 h-2 bg-primary rounded-full flex-shrink-0 mt-2" />
                           <span className="text-sm text-muted-foreground leading-relaxed">{topic}</span>
                         </li>
                       ))}
@@ -92,37 +84,6 @@ export function ServicesSection() {
               </Card>
             );
           })}
-        </div>
-
-        {/* Call to Action */}
-        <div className="text-center">
-          <Card className="card-elegant bg-gradient-subtle border-primary/20">
-            <CardContent className="p-8">
-              <h3 className="text-2xl font-bold text-foreground mb-4">
-                Siap Meningkatkan Performa Tim Anda?
-              </h3>
-              <p className="text-muted-foreground mb-6 max-w-2xl mx-auto">
-                Konsultasikan kebutuhan pelatihan Anda dengan tim ahli kami. Dapatkan program yang disesuaikan 
-                dengan tantangan dan tujuan spesifik organisasi Anda.
-              </p>
-              <div className="flex flex-col sm:flex-row gap-4 justify-center">
-                <a 
-                  href="https://wa.me/6281282285805" 
-                  target="_blank" 
-                  rel="noopener noreferrer"
-                  className="btn-hero inline-flex items-center justify-center text-decoration-none"
-                >
-                  Konsultasi Gratis
-                </a>
-                <a 
-                  href="/kontak"
-                  className="btn-outline-hero inline-flex items-center justify-center text-decoration-none"
-                >
-                  Hubungi Kami
-                </a>
-              </div>
-            </CardContent>
-          </Card>
         </div>
       </div>
     </section>
