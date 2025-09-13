@@ -16,7 +16,7 @@ export function Hero() {
                 Amanah Learning Partner
               </div>
               
-              <h1 className="text-5xl lg:text-7xl xl:text-8xl font-display font-bold leading-tight">
+              <h1 className="text-4xl lg:text-6xl xl:text-7xl font-display font-bold leading-tight">
                 <span className="text-foreground">Partner Strategis</span>
                 <br />
                 <span className="gradient-text">Pengembangan SDM</span>

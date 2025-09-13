@@ -57,7 +57,7 @@ export function ServicesSection() {
             <Sparkles className="w-4 h-4 mr-2" />
             Layanan Kami
           </div>
-          <h2 className="text-5xl lg:text-7xl font-display font-bold text-foreground mb-8 leading-tight">
+          <h2 className="text-3xl lg:text-5xl font-display font-bold text-foreground mb-8 leading-tight">
             Program Pelatihan
             <span className="gradient-text block">Profesional</span>
           </h2>
@@ -76,7 +76,7 @@ export function ServicesSection() {
                   <div className="w-20 h-20 rounded-3xl bg-gradient-primary flex items-center justify-center mb-6 shadow-brand group-hover:shadow-glow transition-all duration-300 group-hover:scale-110">
                     <IconComponent className="w-10 h-10 text-white" />
                   </div>
-                  <CardTitle className="text-3xl font-display font-bold text-foreground group-hover:text-primary transition-colors">
+                  <CardTitle className="text-2xl font-display font-bold text-foreground group-hover:text-primary transition-colors">
                     {service.title}
                   </CardTitle>
                 </CardHeader>
@@ -114,7 +114,7 @@ export function ServicesSection() {
                 <div className="w-16 h-16 bg-gradient-primary rounded-3xl flex items-center justify-center mx-auto mb-8 shadow-glow">
                   <Sparkles className="w-8 h-8 text-white" />
                 </div>
-                <h3 className="text-4xl font-display font-bold text-foreground mb-6">
+                <h3 className="text-3xl font-display font-bold text-foreground mb-6">
                   Siap Meningkatkan Performa Tim Anda?
                 </h3>
                 <p className="text-xl text-muted-foreground mb-10 leading-relaxed">
