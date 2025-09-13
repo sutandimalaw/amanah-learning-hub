@@ -7,6 +7,8 @@ import Index from '@/pages/Index';
 import Profil from '@/pages/Profil';
 import Layanan from '@/pages/Layanan';
 import Kontak from '@/pages/Kontak';
+import Gallery from '@/pages/Gallery';
+import Trainer from '@/pages/Trainer';
 import NotFound from '@/pages/NotFound';
 import { Navbar } from '@/components/site/Navbar';
 
@@ -24,6 +26,8 @@ export default function App() {
             <Route path="/" element={<Index />} />
             <Route path="/profil" element={<Profil />} />
             <Route path="/layanan" element={<Layanan />} />
+            <Route path="/gallery" element={<Gallery />} />
+            <Route path="/trainer" element={<Trainer />} />
             <Route path="/kontak" element={<Kontak />} />
             <Route path="*" element={<NotFound />} />
           </Routes>
