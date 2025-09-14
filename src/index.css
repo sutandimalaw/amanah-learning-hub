@@ -17,13 +17,13 @@
     --popover-foreground: 225 25% 15%;
 
     /* Premium Red System */
-    --primary: 0 75% 59%;
+    --primary: 0 68% 42%;
     --primary-foreground: 0 0% 100%;
-    --primary-light: 0 58% 81%;
-    --primary-dark: 0 87% 40%;
+    --primary-light: 0 58% 65%;
+    --primary-dark: 0 78% 30%;
     --primary-50: 0 58% 95%;
     --primary-100: 0 58% 88%;
-    --primary-900: 0 87% 25%;
+    --primary-900: 0 78% 20%;
 
     /* Refined Neutrals */
     --secondary: 210 20% 98%;
