@@ -5,7 +5,7 @@ import { Card } from '@/components/ui/card';
 
 export function CTASection() {
   return (
-    <section className="section-padding bg-gradient-accent">
+    <section className="section-padding bg-gradient-cta">
       <div className="container-custom">
         <div className="max-w-4xl mx-auto text-center">
           <div className="space-y-8">
