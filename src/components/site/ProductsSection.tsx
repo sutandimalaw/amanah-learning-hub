@@ -14,12 +14,12 @@ const products = [
 
 export function ProductsSection() {
   return (
-    <section id="produk" className="section-padding">
+    <section id="produk" className="mb-8">
       <div className="container-custom">
         <div className="text-center mb-16">
           <Badge className="mb-4 bg-primary/10 text-primary">Produk Pelatihan</Badge>
           <h2 className="text-4xl lg:text-5xl font-bold text-foreground mb-6">Program & Sertifikasi</h2>
-          <p className="text-lg text-muted-foreground max-w-3xl mx-auto">Portofolio lengkap program pelatihan dan sertifikasi untuk mengembangkan kompetensi SDM secara berkelanjutan</p>
+          <p className="text-lg max-w-3xl mx-auto">Portofolio lengkap program pelatihan dan sertifikasi untuk mengembangkan kompetensi SDM secara berkelanjutan</p>
         </div>
 
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 mb-16">
@@ -29,8 +29,8 @@ export function ProductsSection() {
               <Card key={index} className="card-elegant scale-on-hover h-full">
                 <CardHeader className="pb-4">
                   <div className="flex items-center justify-between mb-4">
-                    <div className="w-16 h-16 bg-gradient-primary rounded-xl flex items-center justify-center">
-                      <IconComponent className="w-8 h-8 text-white" />
+                    <div className="w-12 h-12 bg-primary rounded-xl flex items-center justify-center">
+                      <IconComponent className="w-6 h-6 text-white" />
                     </div>
                     {product.certification && <Badge className="bg-yellow-100 text-yellow-800">Sertifikasi</Badge>}
                   </div>
@@ -38,14 +38,14 @@ export function ProductsSection() {
                   <p className="text-primary font-semibold text-sm">{product.subtitle}</p>
                 </CardHeader>
                 <CardContent className="space-y-4">
-                  <p className="text-muted-foreground leading-relaxed text-sm">{product.description}</p>
+                  <p className="leading-relaxed text-sm">{product.description}</p>
                   <div className="space-y-2">
                     <h4 className="font-semibold text-foreground text-xs uppercase tracking-wide">Komponen Utama:</h4>
                     <div className="grid grid-cols-2 gap-2">
                       {product.features.map((feature, i) => (
                         <div key={i} className="flex items-center space-x-2">
                           <div className="w-1.5 h-1.5 bg-primary rounded-full" />
-                          <span className="text-xs text-muted-foreground">{feature}</span>
+                          <span className="text-xs">{feature}</span>
                         </div>
                       ))}
                     </div>

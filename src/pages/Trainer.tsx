@@ -175,11 +175,11 @@ const Trainer = () => {
               <Users className="w-4 h-4 mr-2" />
               Tim Trainer Profesional
             </div>
-            <h1 className="text-4xl lg:text-6xl font-display font-bold text-foreground mb-8 leading-tight">
+            <h1 className="text-3xl lg:text-5xl font-display font-bold text-foreground mb-8 leading-tight">
               Trainer &
-              <span className="gradient-text block">Associate</span>
+              <span className="text-primary block">Associate</span>
             </h1>
-            <p className="text-xl lg:text-2xl text-muted-foreground max-w-4xl mx-auto leading-relaxed">
+            <p className="text-xl lg:text-2xl  max-w-3xl mx-auto leading-relaxed">
               Bertemu dengan tim trainer profesional kami yang berpengalaman dan bersertifikat 
               untuk memberikan pelatihan terbaik bagi organisasi Anda
             </p>
@@ -197,8 +197,8 @@ const Trainer = () => {
               return (
                 <Card key={index} className="card-premium text-center animate-fade-in-up" style={{ animationDelay: `${index * 0.1}s` }}>
                   <CardContent className="p-8">
-                    <div className="w-16 h-16 bg-gradient-primary rounded-3xl flex items-center justify-center mx-auto mb-6 shadow-brand">
-                      <IconComponent className="w-8 h-8 text-white" />
+                    <div className="w-12 h-12 bg-primary rounded-3xl flex items-center justify-center mx-auto mb-6 shadow-brand">
+                      <IconComponent className="w-6 h-6 text-white" />
                     </div>
                     <div className="text-4xl font-bold gradient-text mb-2">{stat.number}</div>
                     <div className="text-muted-foreground font-medium">{stat.label}</div>
@@ -249,7 +249,7 @@ const Trainer = () => {
                   </div>
                 </CardHeader>
                 <CardContent className="space-y-6">
-                  <p className="text-muted-foreground leading-relaxed">
+                  <p className="leading-relaxed">
                     {trainer.bio}
                   </p>
                   
@@ -260,7 +260,7 @@ const Trainer = () => {
                     </h4>
                     <div className="grid grid-cols-1 sm:grid-cols-2 gap-2">
                       {trainer.specializations.map((spec, specIndex) => (
-                        <div key={specIndex} className="flex items-center text-sm text-muted-foreground">
+                        <div key={specIndex} className="flex items-center text-sm">
                           <CheckCircle className="w-3 h-3 mr-2 text-primary flex-shrink-0" />
                           {spec}
                         </div>
@@ -275,7 +275,7 @@ const Trainer = () => {
                     </h4>
                     <div className="grid grid-cols-1 gap-2">
                       {trainer.achievements.map((achievement, achIndex) => (
-                        <div key={achIndex} className="flex items-center text-sm text-muted-foreground">
+                        <div key={achIndex} className="flex items-center text-sm">
                           <Star className="w-3 h-3 mr-2 text-primary flex-shrink-0" />
                           {achievement}
                         </div>
@@ -316,18 +316,18 @@ const Trainer = () => {
           <Card className="card-premium bg-gradient-accent border-primary/20 shadow-brand">
             <CardContent className="p-12 text-center">
               <div className="max-w-4xl mx-auto">
-                <div className="w-16 h-16 bg-gradient-primary rounded-3xl flex items-center justify-center mx-auto mb-8 shadow-glow">
-                  <Users className="w-8 h-8 text-white" />
+                <div className="w-12 h-12 bg-primary rounded-3xl flex items-center justify-center mx-auto mb-8 shadow-glow">
+                  <Users className="w-6 h-6 text-white" />
                 </div>
                 <h3 className="text-3xl font-display font-bold text-foreground mb-6">
                   Butuh Trainer untuk Program Khusus?
                 </h3>
-                <p className="text-xl text-muted-foreground mb-10 leading-relaxed">
+                <p className="text-xl mb-10 leading-relaxed">
                   Tim trainer kami siap membantu merancang dan melaksanakan program pelatihan 
                   yang sesuai dengan kebutuhan spesifik organisasi Anda.
                 </p>
                 <div className="flex flex-col sm:flex-row gap-6 justify-center">
-                  <Button className="btn-hero text-lg px-10 py-4 rounded-2xl shadow-brand hover:shadow-glow">
+                  <Button className=" text-lg px-10 py-4 rounded-2xl shadow-brand hover:shadow-glow">
                     <Phone className="w-5 h-5 mr-3" />
                     Konsultasi Sekarang
                   </Button>

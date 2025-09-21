@@ -72,8 +72,6 @@ const galleryItems = [
   }
 ];
 
-const categories = ['All', 'Leadership', 'Sales', 'Service', 'Communication', 'Team Building', 'Corporate', 'Coaching', 'Digital'];
-
 const Gallery = () => {
   const [selectedCategory, setSelectedCategory] = useState('All');
   const [selectedImage, setSelectedImage] = useState<typeof galleryItems[0] | null>(null);
@@ -92,32 +90,14 @@ const Gallery = () => {
               <Camera className="w-4 h-4 mr-2" />
               Gallery Kegiatan
             </div>
-            <h1 className="text-4xl lg:text-6xl font-display font-bold text-foreground mb-8 leading-tight">
+            <h1 className="text-3xl lg:text-5xl font-display font-bold text-foreground mb-8 leading-tight">
               Dokumentasi
-              <span className="gradient-text block">Pelatihan & Event</span>
+              <span className="text-primary block">Pelatihan & Event</span>
             </h1>
-            <p className="text-xl lg:text-2xl text-muted-foreground max-w-4xl mx-auto leading-relaxed">
+            <p className="text-xl lg:text-2xl max-w-4xl mx-auto leading-relaxed">
               Lihat momen-momen berharga dari berbagai program pelatihan dan kegiatan yang telah kami selenggarakan
             </p>
-          </div>
-
-          {/* Category Filter */}
-          <div className="flex flex-wrap justify-center gap-4 mb-16 animate-fade-in-up" style={{ animationDelay: '0.2s' }}>
-            {categories.map((category) => (
-              <Button
-                key={category}
-                variant={selectedCategory === category ? "default" : "outline"}
-                className={`px-6 py-3 rounded-xl transition-all duration-300 ${
-                  selectedCategory === category 
-                    ? 'btn-hero shadow-brand' 
-                    : 'border-border/50 hover:border-primary/50 hover:bg-primary/10'
-                }`}
-                onClick={() => setSelectedCategory(category)}
-              >
-                {category}
-              </Button>
-            ))}
-          </div>
+          </div>    
 
           {/* Gallery Grid */}
           <div className="grid md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-8">
@@ -136,19 +116,16 @@ const Gallery = () => {
                       className="w-full h-64 object-cover group-hover:scale-110 transition-transform duration-500"
                     />
                     <div className="absolute inset-0 bg-gradient-primary opacity-0 group-hover:opacity-20 transition-opacity duration-300" />
-                    <Badge className="absolute top-4 right-4 bg-white/90 text-primary border-0">
-                      {item.category}
-                    </Badge>
                   </div>
                   <div className="p-6">
                     <h3 className="text-lg font-display font-bold text-foreground mb-3 group-hover:text-primary transition-colors">
                       {item.title}
                     </h3>
-                    <p className="text-muted-foreground text-sm leading-relaxed mb-4">
+                    <p className=" text-sm leading-relaxed mb-4">
                       {item.description}
                     </p>
                     <div className="flex items-center justify-between">
-                      <div className="flex items-center text-xs text-muted-foreground">
+                      <div className="flex items-center text-xs">
                         <Award className="w-4 h-4 mr-2" />
                         {new Date(item.date).toLocaleDateString('id-ID')}
                       </div>
@@ -158,33 +135,6 @@ const Gallery = () => {
                 </CardContent>
               </Card>
             ))}
-          </div>
-        </div>
-      </section>
-
-      {/* Stats Section */}
-      <section className="section-padding">
-        <div className="container-custom">
-          <div className="grid md:grid-cols-4 gap-8">
-            {[
-              { icon: Users, number: '50+', label: 'Program Pelatihan' },
-              { icon: BookOpen, number: '1000+', label: 'Peserta Terlatih' },
-              { icon: Award, number: '25+', label: 'Sertifikat Diterbitkan' },
-              { icon: Sparkles, number: '98%', label: 'Tingkat Kepuasan' }
-            ].map((stat, index) => {
-              const IconComponent = stat.icon;
-              return (
-                <Card key={index} className="card-premium text-center animate-fade-in-up" style={{ animationDelay: `${index * 0.1}s` }}>
-                  <CardContent className="p-8">
-                    <div className="w-16 h-16 bg-gradient-primary rounded-3xl flex items-center justify-center mx-auto mb-6 shadow-brand">
-                      <IconComponent className="w-8 h-8 text-white" />
-                    </div>
-                    <div className="text-4xl font-bold gradient-text mb-2">{stat.number}</div>
-                    <div className="text-muted-foreground font-medium">{stat.label}</div>
-                  </CardContent>
-                </Card>
-              );
-            })}
           </div>
         </div>
       </section>
@@ -213,10 +163,10 @@ const Gallery = () => {
                   <h3 className="text-2xl font-display font-bold text-foreground mb-4">
                     {selectedImage.title}
                   </h3>
-                  <p className="text-muted-foreground leading-relaxed mb-4">
+                  <p className="leading-relaxed mb-4">
                     {selectedImage.description}
                   </p>
-                  <div className="text-sm text-muted-foreground">
+                  <div className="text-sm">
                     {new Date(selectedImage.date).toLocaleDateString('id-ID')}
                   </div>
                 </div>

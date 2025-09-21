@@ -36,14 +36,14 @@ export function Navbar() {
         <div className="flex items-center justify-between h-20 lg:h-24">
           {/* Premium Logo */}
           <Link to="/" className="flex items-center space-x-4 group">
-            <div className="w-14 h-14 bg-gradient-primary rounded-2xl flex items-center justify-center shadow-brand group-hover:shadow-glow transition-all duration-300 group-hover:scale-105">
+            <div className="w-12 h-12 bg-primary rounded-2xl flex items-center justify-center shadow-brand group-hover:shadow-glow transition-all duration-300 group-hover:scale-105">
               <span className="text-white font-bold text-2xl font-display">Y</span>
             </div>
             <div className="flex flex-col">
               <span className="font-display font-bold text-xl text-foreground group-hover:text-primary transition-colors">
                 Yan Consulting
               </span>
-              <span className="text-sm text-muted-foreground -mt-1">Amanah Learning Partner</span>
+              <span className="text-sm -mt-1">Amanah Learning Partner</span>
             </div>
           </Link>
 
@@ -70,7 +70,7 @@ export function Navbar() {
               </Link>
             ))}
             <Link to="/kontak">
-              <Button className="btn-hero text-base px-8 py-3 rounded-xl shadow-brand hover:shadow-glow">
+              <Button className=" text-base px-8 py-3 rounded-xl shadow-brand hover:shadow-glow">
                 Hubungi Kami
               </Button>
             </Link>

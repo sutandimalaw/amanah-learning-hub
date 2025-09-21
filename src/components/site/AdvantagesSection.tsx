@@ -12,12 +12,12 @@ const advantages = [
 
 export function AdvantagesSection() {
   return (
-    <section id="keunggulan" className="section-padding">
+    <section id="keunggulan" className="py-24">
       <div className="container-custom">
         <div className="text-center mb-16">
           <Badge className="mb-4 bg-primary/10 text-primary">Keunggulan Kami</Badge>
           <h2 className="text-4xl lg:text-5xl font-bold text-foreground mb-6">Mengapa Memilih Yan Consulting?</h2>
-          <p className="text-lg text-muted-foreground max-w-3xl mx-auto">
+          <p className="text-lg max-w-3xl mx-auto">
             Komitmen kami terhadap kualitas dan hasil yang terukur menjadikan kami partner terpercaya dalam pengembangan SDM
           </p>
         </div>
@@ -28,11 +28,11 @@ export function AdvantagesSection() {
             return (
               <Card key={index} className="card-elegant scale-on-hover">
                 <CardContent className="p-8">
-                  <div className="w-16 h-16 bg-gradient-primary rounded-xl flex items-center justify-center mb-6">
-                    <IconComponent className="w-8 h-8 text-white" />
+                  <div className="w-12 h-12 bg-primary rounded-xl flex items-center justify-center mb-6">
+                    <IconComponent className="w-6 h-6 text-white" />
                   </div>
                   <h3 className="text-xl font-bold text-foreground mb-4">{advantage.title}</h3>
-                  <p className="text-muted-foreground leading-relaxed">{advantage.description}</p>
+                  <p className="leading-relaxed">{advantage.description}</p>
                 </CardContent>
               </Card>
             );

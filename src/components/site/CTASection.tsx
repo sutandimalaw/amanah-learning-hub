@@ -11,13 +11,13 @@ export function CTASection() {
           <div className="space-y-8">
             {/* Main CTA Content */}
             <div className="space-y-6">
-              <h2 className="text-3xl lg:text-5xl font-display font-bold text-white">
+              <h2 className="text-3xl lg:text-4xl font-display font-bold text-white">
                 Siap Meningkatkan
                 <br />
                 <span className="text-white/90">Kapabilitas Tim Anda?</span>
               </h2>
               
-              <p className="text-xl lg:text-2xl text-white/80 max-w-3xl mx-auto leading-relaxed">
+              <p className="text-xl lg:text-1xl text-white/80 max-w-2xl mx-auto leading-relaxed">
                 Bergabunglah dengan 100+ perusahaan yang telah merasakan transformasi 
                 nyata melalui program pelatihan berkualitas tinggi dari Yan Consulting.
               </p>
@@ -34,7 +34,7 @@ export function CTASection() {
               </Link>
               
               <a href="tel:+6281234567890">
-                <Button variant="outline" className="border-white/30 text-white hover:bg-white/10 hover:text-white text-lg px-10 py-6 rounded-2xl">
+                <Button variant="outline" className="border-white/30 text-white hover:bg-white/10 hover:text-white text-lg px-10 py-6 rounded-2xl bg-btn-primary">
                   <Phone className="w-6 h-6 mr-3" />
                   Hubungi Sekarang
                 </Button>

@@ -11,12 +11,12 @@ const methods = [
 
 export function MethodsSection() {
   return (
-    <section id="metode" className="section-padding bg-gradient-subtle">
+    <section id="metode" className="bg-gradient-subtle">
       <div className="container-custom">
         <div className="text-center mb-16">
           <Badge className="mb-4 bg-primary/10 text-primary">Metode Pelatihan</Badge>
           <h2 className="text-4xl lg:text-5xl font-bold text-foreground mb-6">Fleksibilitas Metode Pembelajaran</h2>
-          <p className="text-lg text-muted-foreground max-w-3xl mx-auto">
+          <p className="text-lg max-w-3xl mx-auto">
             Kami menyediakan berbagai metode pelatihan yang dapat disesuaikan dengan kebutuhan dan preferensi organisasi Anda
           </p>
         </div>
@@ -27,11 +27,11 @@ export function MethodsSection() {
             return (
               <Card key={index} className="card-elegant scale-on-hover text-center">
                 <CardContent className="p-8">
-                  <div className="w-20 h-20 bg-gradient-primary rounded-2xl flex items-center justify-center mx-auto mb-6">
-                    <IconComponent className="w-10 h-10 text-white" />
+                  <div className="w-14 h-14 bg-primary rounded-2xl flex items-center justify-center mx-auto mb-6">
+                    <IconComponent className="w-8 h-8 text-white" />
                   </div>
                   <h3 className="text-xl font-bold text-foreground mb-4">{method.title}</h3>
-                  <p className="text-muted-foreground leading-relaxed text-sm">{method.description}</p>
+                  <p className=" leading-relaxed text-sm">{method.description}</p>
                 </CardContent>
               </Card>
             );

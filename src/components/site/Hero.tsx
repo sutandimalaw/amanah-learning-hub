@@ -1,10 +1,12 @@
 import { Link } from 'react-router-dom';
-import { ArrowRight, CheckCircle, Sparkles } from 'lucide-react';
+import { ArrowRight, CheckCircle, Sparkles, Users, Target, Building2 } from 'lucide-react';
 import { Button } from '@/components/ui/button';
-import heroImage from '@/assets/hero-consulting.jpg';
+import yanImage from '@/assets/yanImage.png';
+
 
 export function Hero() {
   return (
+    <>
     <section className="relative min-h-screen flex items-center hero-gradient overflow-hidden">
       <div className="container-custom relative z-10">
         <div className="grid lg:grid-cols-2 gap-16 items-center">
@@ -16,15 +18,15 @@ export function Hero() {
                 Amanah Learning Partner
               </div>
               
-              <h1 className="text-4xl lg:text-6xl xl:text-7xl font-display font-bold leading-tight">
+              <h1 className="text-4xl lg:text-5xl xl:text-5xl font-display font-bold leading-tight">
                 <span className="text-foreground">Partner Strategis</span>
                 <br />
-                <span className="gradient-text">Pengembangan SDM</span>
+                <span className="">Pengembangan SDM</span>
                 <br />
-                <span className="text-foreground">yang Amanah & Terpercaya</span>
+                  yang<span className="text-primary"> Amanah</span> & Terpercaya
               </h1>
               
-              <p className="text-xl lg:text-2xl text-muted-foreground max-w-2xl mx-auto lg:mx-0 leading-relaxed">
+              <p className=" lg:text-1xl  max-w-1xl mx-auto lg:mx-0 leading-relaxed">
                 Yan Consulting hadir sejak 2023 memberikan solusi pelatihan yang terpercaya, praktis,
                 dan berdampak langsung terhadap performa individu dan tim Anda.
               </p>
@@ -33,13 +35,13 @@ export function Hero() {
             {/* CTA Buttons */}
             <div className="flex flex-col sm:flex-row gap-6 justify-center lg:justify-start">
               <Link to="/layanan">
-                <Button className="btn-hero group text-lg px-10 py-6 rounded-2xl">
+                <Button className="btn-primary group text-lg px-10 py-6 rounded-2xl">
                   Jelajahi Layanan
                   <ArrowRight className="w-6 h-6 ml-3 group-hover:translate-x-2 transition-transform duration-300" />
                 </Button>
               </Link>
               <Link to="/profil">
-                <Button className="btn-outline-hero text-lg px-10 py-6 rounded-2xl">
+                <Button className="bg-white text-primary hover:bg-red-800 hover:text-white text-lg px-10 py-6 rounded-2xl shadow-brand group">
                   Profil Perusahaan
                 </Button>
               </Link>
@@ -48,15 +50,15 @@ export function Hero() {
             {/* Enhanced Stats */}
             <div className="grid grid-cols-3 gap-8 pt-12 border-t border-border/30">
               <div className="text-center lg:text-left group">
-                <div className="text-4xl lg:text-5xl font-bold gradient-text group-hover:scale-110 transition-transform duration-300">2+</div>
+                <div className="text-2xl lg:text-4xl font-bold group-hover:scale-110 transition-transform duration-300">2+</div>
                 <div className="text-base text-muted-foreground font-medium">Tahun Pengalaman</div>
               </div>
               <div className="text-center lg:text-left group">
-                <div className="text-4xl lg:text-5xl font-bold gradient-text group-hover:scale-110 transition-transform duration-300">100+</div>
+                <div className="text-4xl lg:text-4xl font-bold  group-hover:scale-110 transition-transform duration-300">100+</div>
                 <div className="text-base text-muted-foreground font-medium">Klien Terpuaskan</div>
               </div>
               <div className="text-center lg:text-left group">
-                <div className="text-4xl lg:text-5xl font-bold gradient-text group-hover:scale-110 transition-transform duration-300">7+</div>
+                <div className="text-4xl lg:text-4xl font-bold  group-hover:scale-110 transition-transform duration-300">7+</div>
                 <div className="text-base text-muted-foreground font-medium">Trainer Profesional</div>
               </div>
             </div>
@@ -67,7 +69,7 @@ export function Hero() {
             <div className="relative z-20">
               <div className="relative group">
                 <img
-                  src={heroImage}
+                  src={yanImage}
                   alt="Ilustrasi profesional konsultasi bisnis"
                   className="rounded-3xl shadow-brand hover-glow w-full h-auto transition-all duration-500 group-hover:scale-105"
                   loading="eager"
@@ -89,5 +91,9 @@ export function Hero() {
       <div className="absolute -top-40 -right-40 w-80 h-80 bg-primary/5 rounded-full blur-3xl -z-20" />
       <div className="absolute -bottom-40 -left-40 w-96 h-96 bg-primary-light/5 rounded-full blur-3xl -z-20" />
     </section>
-  );
+  </>
+);
 }
+
+
+

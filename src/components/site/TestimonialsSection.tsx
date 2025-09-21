@@ -42,7 +42,7 @@ const testimonials = [
 
 export function TestimonialsSection() {
   return (
-    <section className="section-padding bg-gradient-subtle">
+    <section className="pb-24 bg-gradient-subtle">
       <div className="container-custom">
         <div className="text-center mb-16">
           <div className="inline-flex items-center gap-2 bg-primary/10 text-primary px-4 py-2 rounded-full text-sm font-semibold mb-6">
@@ -51,7 +51,7 @@ export function TestimonialsSection() {
           </div>
           <h2 className="text-3xl lg:text-5xl font-display font-bold text-foreground mb-6">
             Apa Kata
-            <span className="gradient-text"> Klien Kami</span>
+            <span className="text-primary"> Klien Kami</span>
           </h2>
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
             Lebih dari 100 perusahaan telah merasakan manfaat nyata dari program pelatihan dan konsultasi kami

@@ -50,8 +50,8 @@ export function ContactSection() {
       <div className="container-custom">
         <div className="text-center mb-16">
           <Badge className="mb-4 bg-primary/10 text-primary">Hubungi Kami</Badge>
-          <h1 className="text-4xl lg:text-5xl font-bold text-foreground mb-6">Mari Berkolaborasi</h1>
-          <p className="text-lg text-muted-foreground max-w-3xl mx-auto">Siap mengembangkan SDM organisasi Anda? Hubungi tim kami untuk konsultasi.</p>
+          <h1 className="text-3xl lg:text-4xl font-bold text-foreground mb-6">Mari Berkolaborasi</h1>
+          <p className="text-lg max-w-3xl mx-auto">Siap mengembangkan SDM organisasi Anda? Hubungi tim kami untuk konsultasi.</p>
         </div>
 
         <div className="grid lg:grid-cols-2 gap-12">
@@ -62,7 +62,7 @@ export function ContactSection() {
                 <Card key={i} className="card-elegant">
                   <CardContent className="p-6">
                     <div className="flex items-start gap-4">
-                      <div className="w-12 h-12 bg-gradient-primary rounded-lg flex items-center justify-center">
+                      <div className="w-12 h-12 bg-primary rounded-lg flex items-center justify-center">
                         <Icon className="w-6 h-6 text-white" />
                       </div>
                       <div>
@@ -74,7 +74,7 @@ export function ContactSection() {
                         ) : (
                           <p className="text-primary font-medium">{info.detail}</p>
                         )}
-                        <p className="text-sm text-muted-foreground mt-1">{info.description}</p>
+                        <p className="text-sm mt-1">{info.description}</p>
                       </div>
                     </div>
                   </CardContent>
@@ -93,7 +93,7 @@ export function ContactSection() {
                     <div className="space-y-1 text-sm">
                       <p className="text-foreground">Senin - Jumat: 08:00 - 17:00 WIB</p>
                       <p className="text-foreground">Sabtu: 08:00 - 12:00 WIB</p>
-                      <p className="text-muted-foreground">Minggu & Hari Libur: Tutup</p>
+                      <p>Minggu & Hari Libur: Tutup</p>
                     </div>
                   </div>
                 </div>
@@ -104,7 +104,7 @@ export function ContactSection() {
           <Card className="card-elegant">
             <CardHeader>
               <CardTitle className="text-2xl text-foreground">Kirim Pesan</CardTitle>
-              <p className="text-muted-foreground">Ceritakan kebutuhan pelatihan Anda, kami akan memberi solusi terbaik.</p>
+              <p>Ceritakan kebutuhan pelatihan Anda, kami akan memberi solusi terbaik.</p>
             </CardHeader>
             <CardContent>
               <form onSubmit={handleSubmit} className="space-y-6">
@@ -120,7 +120,7 @@ export function ContactSection() {
                   <Label htmlFor="message" className="text-foreground">Pesan *</Label>
                   <Textarea id="message" name="message" value={formData.message} onChange={handleChange} rows={5} placeholder="Ceritakan kebutuhan Anda..." required />
                 </div>
-                <Button type="submit" className="btn-hero w-full" disabled={isSubmitting}>
+                <Button type="submit" className="w-full" disabled={isSubmitting}>
                   {isSubmitting ? 'Mengirim...' : (<><Send className="w-5 h-5 mr-2" /> Kirim Pesan</>)}
                 </Button>
               </form>

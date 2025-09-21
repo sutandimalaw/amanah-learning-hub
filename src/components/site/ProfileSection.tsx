@@ -1,6 +1,7 @@
 import { Card, CardContent } from '@/components/ui/card';
 import { Badge } from '@/components/ui/badge';
 import { Target, Eye, Award } from 'lucide-react';
+import founder from '@/assets/founder.png';
 
 const coreValues = [
   { letter: 'A', value: 'Aspiratif', description: 'Melayani sepenuh hati dengan semangat tinggi' },
@@ -22,59 +23,6 @@ export function ProfileSection() {
   return (
     <section className="section-padding bg-gradient-subtle">
       <div className="container-custom">
-        <div className="text-center mb-16">
-          <Badge className="mb-4 bg-primary/10 text-primary">Profil Perusahaan</Badge>
-          <h1 className="text-4xl lg:text-5xl font-bold text-foreground mb-6">Tentang Yan Consulting</h1>
-          <p className="text-lg text-muted-foreground max-w-3xl mx-auto">
-            Perusahaan training dan consulting yang berkomitmen menjadi mitra terbaik dalam pengembangan SDM di Indonesia
-          </p>
-        </div>
-
-        <div className="grid lg:grid-cols-2 gap-12 mb-16">
-          <Card className="card-elegant">
-            <CardContent className="p-8">
-              <div className="space-y-6">
-                <div className="flex items-center space-x-4">
-                  <div className="w-12 h-12 bg-primary rounded-lg flex items-center justify-center">
-                    <Award className="w-6 h-6 text-primary-foreground" />
-                  </div>
-                  <div>
-                    <h3 className="text-xl font-semibold text-foreground">Sejak 2023</h3>
-                    <p className="text-muted-foreground">Amanah Learning Partner</p>
-                  </div>
-                </div>
-                <p className="text-foreground leading-relaxed">
-                  Yan Consulting adalah perusahaan training dan consulting hadir sejak tahun 2023 yang berkomitmen
-                  menjadi mitra terbaik dalam pengembangan Sumber Daya Manusia di Indonesia.
-                </p>
-                <p className="text-foreground leading-relaxed">
-                  Dengan tagline "AMANAH LEARNING PARTNER", kami hadir memberikan solusi pelatihan yang terpercaya,
-                  praktis, dan berdampak langsung terhadap performa individu dan tim.
-                </p>
-                <p className="text-foreground leading-relaxed">
-                  Kami percaya bahwa kunci kesuksesan organisasi terletak pada kualitas manusianya. Oleh karena itu,
-                  kami mengembangkan program-program pelatihan yang fokus pada peningkatan penjualan, pemasaran,
-                  pelayanan prima, kepemimpinan, dan coaching skill.
-                </p>
-              </div>
-            </CardContent>
-          </Card>
-
-          <Card className="card-elegant">
-            <CardContent className="p-8">
-              <div className="text-center space-y-6">
-                <div className="w-24 h-24 bg-primary rounded-full mx-auto flex items-center justify-center">
-                  <span className="text-2xl font-bold text-primary-foreground">YH</span>
-                </div>
-                <div>
-                  <h3 className="text-2xl font-bold text-foreground">Yayan Hendrayana, S.AB, MA</h3>
-                  <p className="text-primary font-semibold">Direktur YAN Consulting</p>
-                </div>
-              </div>
-            </CardContent>
-          </Card>
-        </div>
-
         <Card className="card-elegant mb-12">
           <CardContent className="p-8">
             <div className="flex items-start space-x-4">
@@ -91,7 +39,6 @@ export function ProfileSection() {
             </div>
           </CardContent>
         </Card>
-
         <Card className="card-elegant mb-12">
           <CardContent className="p-8">
             <div className="flex items-start space-x-4">
@@ -124,7 +71,7 @@ export function ProfileSection() {
           {coreValues.map((item, index) => (
             <Card key={index} className="card-elegant scale-on-hover">
               <CardContent className="p-6 text-center">
-                <div className="w-16 h-16 bg-gradient-primary rounded-full flex items-center justify-center mx-auto mb-4">
+                <div className="w-12 h-12 bg-primary rounded-full flex items-center justify-center mx-auto mb-4">
                   <span className="text-2xl font-bold text-white">{item.letter}</span>
                 </div>
                 <h4 className="text-xl font-bold text-foreground mb-2">{item.value}</h4>
