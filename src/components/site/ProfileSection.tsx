@@ -1,15 +1,15 @@
 import { Card, CardContent } from '@/components/ui/card';
 import { Badge } from '@/components/ui/badge';
-import { Target, Eye, Award } from 'lucide-react';
+import { Target, Eye, Award, Lightbulb, BookOpen, TrendingUp, ShieldCheck, Heart } from 'lucide-react';
 import founder from '@/assets/founder.png';
 
 const coreValues = [
-  { letter: 'A', value: 'Aspiratif', description: 'Melayani sepenuh hati dengan semangat tinggi' },
-  { letter: 'M', value: 'Aktual', description: 'Materi dan metode yang relevan dengan kebutuhan masa kini' },
-  { letter: 'A', value: 'Nilai Tambah', description: 'Memberikan manfaat nyata bagi pengembangan SDM' },
-  { letter: 'N', value: 'Amanah', description: 'Dapat dipercaya dalam setiap komitmen dan layanan' },
-  { letter: 'A', value: 'Hasil', description: 'Fokus pada pencapaian hasil yang terukur dan berkelanjutan' },
-  { letter: 'H', value: 'Humanis', description: 'Pendekatan yang mengutamakan nilai-nilai kemanusiaan' },
+  { icon: Lightbulb, value: 'Aspiratif', description: 'Melayani sepenuh hati dengan semangat tinggi' },
+  { icon: BookOpen, value: 'Aktual', description: 'Materi dan metode yang relevan dengan kebutuhan masa kini' },
+  { icon: TrendingUp, value: 'Nilai Tambah', description: 'Memberikan manfaat nyata bagi pengembangan SDM' },
+  { icon: ShieldCheck, value: 'Amanah', description: 'Dapat dipercaya dalam setiap komitmen dan layanan' },
+  { icon: Target, value: 'Hasil', description: 'Fokus pada pencapaian hasil yang terukur dan berkelanjutan' },
+  { icon: Heart, value: 'Humanis', description: 'Pendekatan yang mengutamakan nilai-nilai kemanusiaan' },
 ];
 
 const missionPoints = [
@@ -63,7 +63,9 @@ export function ProfileSection() {
         </Card>
 
         <div className="text-center mb-8">
-          <h3 className="text-3xl font-bold text-foreground mb-4">Core Value "AMANAH"</h3>
+          <h3 className="text-3xl font-[impact] tracking-wider text-foreground mb-4">CORE VALUE 
+           <br/><span className='text-primary'>AMANAH</span></h3>
+          
           <p className="text-muted-foreground">Nilai-nilai fundamental yang menjadi landasan setiap layanan kami</p>
         </div>
 
@@ -72,7 +74,7 @@ export function ProfileSection() {
             <Card key={index} className="card-elegant scale-on-hover">
               <CardContent className="p-6 text-center">
                 <div className="w-12 h-12 bg-primary rounded-full flex items-center justify-center mx-auto mb-4">
-                  <span className="text-2xl font-bold text-white">{item.letter}</span>
+                  <item.icon className="w-6 h-6 text-white" />
                 </div>
                 <h4 className="text-xl font-bold text-foreground mb-2">{item.value}</h4>
                 <p className="text-muted-foreground text-sm leading-relaxed">{item.description}</p>

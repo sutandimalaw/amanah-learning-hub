@@ -16,12 +16,11 @@ export function AdvantagesSection() {
       <div className="container-custom">
         <div className="text-center mb-16">
           <Badge className="mb-4 bg-primary/10 text-primary">Keunggulan Kami</Badge>
-          <h2 className="text-4xl lg:text-5xl font-bold text-foreground mb-6">Mengapa Memilih Yan Consulting?</h2>
-          <p className="text-lg max-w-3xl mx-auto">
-            Komitmen kami terhadap kualitas dan hasil yang terukur menjadikan kami partner terpercaya dalam pengembangan SDM
+          <h2 className="text-4xl lg:text-5xl font-[Impact] tracking-widest  text-foreground mb-6">MENGAPA MEMILIH YAN CONSULTING?</h2>
+          <p className="text-lg max-w-3xl mx-auto font-sans">
+            KOMITMEN KAMI TERHADAP KUALITAS DAN HASIL YANG TERUKUR MENJADIKAN KAMI PARTNER TERPERCAYA DALAM PENGEMBANGAN SDM
           </p>
         </div>
-
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 mb-12">
           {advantages.map((advantage, index) => {
             const IconComponent = advantage.icon;

@@ -11,15 +11,15 @@ export function CTASection() {
           <div className="space-y-8">
             {/* Main CTA Content */}
             <div className="space-y-6">
-              <h2 className="text-3xl lg:text-4xl font-display font-bold text-white">
-                Siap Meningkatkan
+              <h2 className="text-3xl lg:text-4xl font-aria font-[Impact] tracking-widest text-white" >
+                SIAP MENINGKATKAN
                 <br />
-                <span className="text-white/90">Kapabilitas Tim Anda?</span>
+                <span className="text-white/90">KAPABILITAS TIM ANDA?</span>
               </h2>
               
-              <p className="text-xl lg:text-1xl text-white/80 max-w-2xl mx-auto leading-relaxed">
-                Bergabunglah dengan 100+ perusahaan yang telah merasakan transformasi 
-                nyata melalui program pelatihan berkualitas tinggi dari Yan Consulting.
+              <p className="text-xl tracking-wider font-sans lg:text-1xl text-white/80 max-w-2xl mx-auto leading-relaxed">
+                BERGABUNGLAH DENGAN 100+ PERUSAHAAN YANG TELAH MERASAKAN TRANSFORMASI 
+                NYATA MELALUI PROGRAM PELATIHAN BERKUALITAS TINGGI DARI YAN CONSULTING.
               </p>
             </div>
 

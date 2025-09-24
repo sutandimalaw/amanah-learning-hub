@@ -1,6 +1,5 @@
 import React, { useEffect, useRef, useState } from "react";
 import { Star, BarChart3, Radio } from "lucide-react";
-import founder from '@/assets/founder.png';
 
 export function AboutSection() {
   const leftRef = useRef<HTMLDivElement | null>(null);
@@ -38,7 +37,8 @@ export function AboutSection() {
           className={`relative w-full md:w-1/2 h-80 md:h-96 transform transition-all duration-700 ease-out ${leftInView ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-6'}`}
         >
           <img
-            src={founder}
+            src={`${import.meta.env.VITE_CLOUDINARY_BASE_URL}/f_auto,q_auto/buat_coffee_sharing_2_pxz0rr`}
+            loading="lazy"
             height={100}
             alt="About 1"
             className="mx-auto top-0  left-0 h-[120%] object-cover rounded-xl shadow-lg transition-transform duration-500 will-change-transform hover:scale-[1.03]"

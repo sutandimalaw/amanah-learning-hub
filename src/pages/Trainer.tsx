@@ -175,13 +175,13 @@ const Trainer = () => {
               <Users className="w-4 h-4 mr-2" />
               Tim Trainer Profesional
             </div>
-            <h1 className="text-3xl lg:text-5xl font-display font-bold text-foreground mb-8 leading-tight">
-              Trainer &
-              <span className="text-primary block">Associate</span>
+            <h1 className="text-3xl lg:text-5xl font-[Impact] tracking-widest text-foreground mb-8 leading-tight">
+              TRAINER &
+              <span className="text-primary block">ASSOCIATE</span>
             </h1>
-            <p className="text-xl lg:text-2xl  max-w-3xl mx-auto leading-relaxed">
-              Bertemu dengan tim trainer profesional kami yang berpengalaman dan bersertifikat 
-              untuk memberikan pelatihan terbaik bagi organisasi Anda
+            <p className="text-xl lg:text-1xl max-w-3xl mx-auto leading-relaxed font-sans">
+              BERTEMU DENGAN TIM TRAINER PROFESIONAL KAMI YANG BERPENGALAMAN DAN BERSERTIFIKAT 
+              UNTUK MEMBERIKAN PELATIHAN TERBAIK BAGI ORGANISASI ANDA
             </p>
           </div>
 
@@ -219,11 +219,11 @@ const Trainer = () => {
                 <CardHeader className="pb-6">
                   <div className="flex flex-col md:flex-row items-start gap-6">
                     <div className="relative">
-                      <img
+                      {/* <img
                         src={trainer.avatar}
                         alt={trainer.name}
                         className="w-32 h-32 rounded-3xl object-cover shadow-brand"
-                      />
+                      /> */}
                       <div className="absolute -bottom-2 -right-2 w-10 h-10 bg-gradient-primary rounded-2xl flex items-center justify-center shadow-glow">
                         <Star className="w-5 h-5 text-white" />
                       </div>
@@ -282,27 +282,6 @@ const Trainer = () => {
                       ))}
                     </div>
                   </div>
-
-                  <div className="flex flex-col sm:flex-row gap-4 pt-4 border-t border-border/30">
-                    <Button 
-                      variant="outline" 
-                      size="sm" 
-                      className="flex-1 rounded-xl border-primary/20 hover:bg-primary/10"
-                      onClick={() => window.open(`https://wa.me/${trainer.contact.phone.replace(/\D/g, '')}`, '_blank')}
-                    >
-                      <Phone className="w-4 h-4 mr-2" />
-                      WhatsApp
-                    </Button>
-                    <Button 
-                      variant="outline" 
-                      size="sm" 
-                      className="flex-1 rounded-xl border-primary/20 hover:bg-primary/10"
-                      onClick={() => window.open(`mailto:${trainer.contact.email}`, '_blank')}
-                    >
-                      <Mail className="w-4 h-4 mr-2" />
-                      Email
-                    </Button>
-                  </div>
                 </CardContent>
               </Card>
             ))}
@@ -319,17 +298,17 @@ const Trainer = () => {
                 <div className="w-12 h-12 bg-primary rounded-3xl flex items-center justify-center mx-auto mb-8 shadow-glow">
                   <Users className="w-6 h-6 text-white" />
                 </div>
-                <h3 className="text-3xl font-display font-bold text-foreground mb-6">
-                  Butuh Trainer untuk Program Khusus?
+              <h3 className="text-3xl font-[impact] tracking-widest  text-foreground mb-6">
+                  BUTUH TRAINER UNTUK PROGRAM KHUSUS?
                 </h3>
-                <p className="text-xl mb-10 leading-relaxed">
-                  Tim trainer kami siap membantu merancang dan melaksanakan program pelatihan 
-                  yang sesuai dengan kebutuhan spesifik organisasi Anda.
+                <p className="text-xl mb-10 leading-relaxed font-sans">
+                  TIM TRAINER KAMI SIAP MEMBANTU MERANCANG DAN MELAKSANAKAN PROGRAM PELATIHAN 
+                  YANG SESUAI DENGAN KEBUTUHAN SPESIFIK ORGANISASI ANDA.
                 </p>
                 <div className="flex flex-col sm:flex-row gap-6 justify-center">
                   <Button className=" text-lg px-10 py-4 rounded-2xl shadow-brand hover:shadow-glow">
                     <Phone className="w-5 h-5 mr-3" />
-                    Konsultasi Sekarang
+                    KONSULTASI SEKARANG
                   </Button>
                   <Button 
                     variant="outline" 
@@ -337,7 +316,7 @@ const Trainer = () => {
                     onClick={() => window.location.href = '/kontak'}
                   >
                     <Mail className="w-5 h-5 mr-3" />
-                    Hubungi Tim
+                    HUBUNGI TIM
                   </Button>
                 </div>
               </div>

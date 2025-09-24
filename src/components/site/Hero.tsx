@@ -18,17 +18,17 @@ export function Hero() {
                 Amanah Learning Partner
               </div>
               
-              <h1 className="text-4xl lg:text-5xl xl:text-5xl font-display font-bold leading-tight">
-                <span className="text-foreground">Partner Strategis</span>
+            <h1 className="text-4xl lg:text-5xl xl:text-5xl font-[Impact] tracking-widest " >
+                <span className="text-foreground">PARTNER STATEGIS</span>
                 <br />
-                <span className="">Pengembangan SDM</span>
+                <span className="">PENGEMBAHAN SDM</span>
                 <br />
-                  yang<span className="text-primary"> Amanah</span> & Terpercaya
+                  YANG<span className="text-primary"> AMANAH</span> & TERPERCAYA
               </h1>
               
-              <p className=" lg:text-1xl  max-w-1xl mx-auto lg:mx-0 leading-relaxed">
-                Yan Consulting hadir sejak 2023 memberikan solusi pelatihan yang terpercaya, praktis,
-                dan berdampak langsung terhadap performa individu dan tim Anda.
+  <p className=" lg:text-1xl  max-w-1xl mx-auto lg:mx-0 leading-relaxed font-sans" >
+                YAN CONSULTING HADIR SEJAK 2023 MEMBERIKAN SOLUSI PELATIHAN YANG TERPERCAYA, PRAKTIS,
+                DAN BERDAMPAK LANGSUNG TERHADAP PERFORMA INDIVIDU DAN TIM ANDA.
               </p>
             </div>
 
@@ -94,6 +94,3 @@ export function Hero() {
   </>
 );
 }
-
-
-

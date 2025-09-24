@@ -15,9 +15,9 @@ export function MethodsSection() {
       <div className="container-custom">
         <div className="text-center mb-16">
           <Badge className="mb-4 bg-primary/10 text-primary">Metode Pelatihan</Badge>
-          <h2 className="text-4xl lg:text-5xl font-bold text-foreground mb-6">Fleksibilitas Metode Pembelajaran</h2>
-          <p className="text-lg max-w-3xl mx-auto">
-            Kami menyediakan berbagai metode pelatihan yang dapat disesuaikan dengan kebutuhan dan preferensi organisasi Anda
+          <h2 className="text-4xl lg:text-5xl font-[Impact] tracking-widest text-foreground mb-6">FLEKSIBILITAS METODE PEMBELAJARAN</h2>
+          <p className="text-xl lg:text-1xl max-w-3xl mx-auto leading-relaxed font-sans">
+            KAMI MENYEDIAKAN BERBAGAI METODE PELATIHAN YANG DAPAT DISESUAIKAN DENGAN KEBUTUHAN DAN PREFERENSI ORGANISASI ANDA
           </p>
         </div>
 

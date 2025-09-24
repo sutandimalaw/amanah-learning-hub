@@ -50,8 +50,8 @@ export function ContactSection() {
       <div className="container-custom">
         <div className="text-center mb-16">
           <Badge className="mb-4 bg-primary/10 text-primary">Hubungi Kami</Badge>
-          <h1 className="text-3xl lg:text-4xl font-bold text-foreground mb-6">Mari Berkolaborasi</h1>
-          <p className="text-lg max-w-3xl mx-auto">Siap mengembangkan SDM organisasi Anda? Hubungi tim kami untuk konsultasi.</p>
+          <h1 className="text-3xl lg:text-4xl font-[impact] tracking-widest text-foreground mb-6">MARI BERKOLABORASI</h1>
+          <p className="text-xl lg:text-1xl max-w-3xl mx-auto leading-relaxed font-sans">SIAP MENGEMBANGKAN SDM ORGANISASI ANDA? HUBUNGI TIM KAMI UNTUK KONSULTASI.</p>
         </div>
 
         <div className="grid lg:grid-cols-2 gap-12">

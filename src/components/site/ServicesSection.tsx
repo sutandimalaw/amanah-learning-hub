@@ -57,12 +57,12 @@ export function ServicesSection() {
             <Sparkles className="w-4 h-4 mr-2" />
             Layanan Kami
           </div>
-          <h2 className="text-3xl lg:text-5xl font-display font-bold text-foreground mb-8 leading-tight">
-            Program Pelatihan
-            <span className="text-primary block">Profesional</span>
+          <h2 className="text-3xl lg:text-5xl font-[Impact] text-foreground mb-8 tracking-widest">
+            PROGRAM PELATIHAN
+            <span className="text-primary block">PROFESIONAL</span>
           </h2>
-          <p className="text-xl lg:text-2xl max-w-3xl mx-auto leading-relaxed">
-            Solusi pelatihan yang terpersonalisasi untuk mengembangkan kompetensi dan performa tim Anda
+          <p className="text-xl lg:text-1xl max-w-3xl mx-auto leading-relaxed font-sans">
+            SOLUSI PELATIHAN YANG TERPERSONALISASI UNTUK MENGEMBANGKAN KOMPETENSI DAN PERFORMA TIM ANDA
           </p>
         </div>
 

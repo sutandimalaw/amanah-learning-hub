@@ -1,3 +1,4 @@
+import brandsImage from '@/assets/brands.png';
 import yanImage from '@/assets/inhouseImage.png';
 
 type TrainingCardProps = {
@@ -104,13 +105,11 @@ const LogoWall = () => (
     <h3 className="mb-6 text-center text-sm font-semibold tracking-wide text-muted-foreground">
       Telah dipercaya oleh berbagai perusahaan
     </h3>
-    <div className="grid grid-cols-2 items-center justify-items-center gap-6 sm:grid-cols-3 md:grid-cols-5">
-      {trainingLogos.map((logo) => (
-        <div key={logo.alt} className="flex h-12 w-full items-center justify-center">
-          <LogoImg src={logo.src} alt={logo.alt} />
-        </div>
-      ))}
-    </div>
+    <img
+      src={brandsImage}
+      alt="Brands"
+      className="w-full h-auto rounded-2xl object-cover"
+    />
   </div>
 );
 
@@ -119,9 +118,9 @@ export function InHouseTraining() {
     <section id="training" className="relative py-16 sm:py-20">
       <div className="container-custom animate-fade-in-up">
         <div className="mb-10 text-center">
-          <h2 className="text-3xl lg:text-4xl font-bold font-display tracking-tight sm:text-3xl">Program Pelatihan</h2>
-          <p className="mt-2 text-xl lg:text-1xl max-w-2xl mx-auto leading-relaxed">
-            Pilihan program In-House Training serta sertifikasi LSP (BNSP).
+          <h2 className="text-3xl lg:text-4xl font-[impact] tracking-wider sm:text-3xl">THEMA PELATIHAN</h2>
+          <p className="mt-2 text-xl lg:text-1xl max-w-2xl font-sans mx-auto leading-relaxed">
+            PILIHAN PROGRAM IN-HOUSE TRAINING SERTA SERTIFIKASI LSP (BNSP).
           </p>
         </div>
 
