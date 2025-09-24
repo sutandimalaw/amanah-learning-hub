@@ -1,7 +1,7 @@
 import { Link } from 'react-router-dom';
 import { ArrowRight, CheckCircle, Sparkles, Users, Target, Building2 } from 'lucide-react';
 import { Button } from '@/components/ui/button';
-import yanImage from '@/assets/yanImage.png';
+import yanImage from '@/assets/logo_yc.png';
 
 
 export function Hero() {
@@ -68,12 +68,15 @@ export function Hero() {
           <div className="relative lg:pl-8 animate-fade-in-up" style={{ animationDelay: '0.2s' }}>
             <div className="relative z-20">
               <div className="relative group">
+                <div>
                 <img
                   src={yanImage}
                   alt="Ilustrasi profesional konsultasi bisnis"
                   className="rounded-3xl shadow-brand hover-glow w-full h-auto transition-all duration-500 group-hover:scale-105"
                   loading="eager"
                 />
+                </div>
+               
                 <div className="absolute inset-0 rounded-3xl bg-gradient-primary opacity-0 group-hover:opacity-10 transition-opacity duration-500" />
               </div>
             </div>

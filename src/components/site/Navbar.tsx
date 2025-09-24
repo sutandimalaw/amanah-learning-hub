@@ -3,6 +3,7 @@ import { Link, useLocation } from 'react-router-dom';
 import { Menu, X } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { cn } from '@/lib/utils';
+import logo from '@/assets/icon.png';
 
 const navigation = [
   { name: 'Profil', href: '/profil' },
@@ -36,9 +37,11 @@ export function Navbar() {
         <div className="flex items-center justify-between h-20 lg:h-24">
           {/* Premium Logo */}
           <Link to="/" className="flex items-center space-x-4 group">
-            <div className="w-12 h-12 bg-primary rounded-2xl flex items-center justify-center shadow-brand group-hover:shadow-glow transition-all duration-300 group-hover:scale-105">
-              <span className="text-white font-bold text-2xl font-display">Y</span>
-            </div>
+            <img 
+              src={logo}
+              alt="Yan Consulting Logo" 
+              className="w-12 h-12 object-contain"
+            />
             <div className="flex flex-col">
               <span className="font-display font-bold text-xl text-foreground group-hover:text-primary transition-colors">
                 Yan Consulting
